@@ -3,7 +3,7 @@
     color: #685858;
 }
 .bg-image {
-    background:linear-gradient(rgba(109, 106, 106, 0.6)) ;
+    
     background-image:url('../Photo/backgroundTwo.jpg') ;
     min-height: 500px; 
     background-attachment: fixed;
@@ -101,4 +101,13 @@ textarea {
        font-size: 15px;
     }
   
+  } @media all and (max-width: 280px){
+    .bg-image {
+       width: 280px;
+    }
+    .title-contact{
+        font-size: 10px;
+    }
+
   }
+  
