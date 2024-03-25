@@ -1,0 +1,56 @@
+
+.containerJewelery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #685858;
+    font-family: "Duru Sans", sans-serif;
+  }
+  .shop{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+  }
+  .imageShop{
+    width: 200px;
+    height: 300px;
+  }
+  .imageShop:hover{
+    border:1px solid #685858;
+    transform: scale(1.5);  
+  }
+  
+  .info{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .containerButton{
+    display:flex;
+    flex-direction:column;
+    padding: 10px;
+  }
+  .buttonLike{
+    background: none;
+  }
+  .change{
+    background:none;
+    border:none;
+    color:#685858;
+    font-family: "Duru Sans", sans-serif
+  }
+  .change:hover{
+    color:#C8C0BD;
+    text-decoration: underline;
+    transition: 200ms ease-in;
+  }
+  .titleShop{
+    color: #685858;
+    text-align: center;
+    font-family: "Duru Sans", sans-serif;
+  }
+  @media all and (max-width: 800px){
+    .imageShop:hover{
+        transform: scale(1.2);  
+      }
+  }

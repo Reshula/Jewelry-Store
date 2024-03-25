@@ -1,0 +1,23 @@
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#685858;
+    font-family: "Duru Sans", sans-serif;
+    color: #C8C0BD;
+  
+}
+p:hover{
+    color: #000000;
+	transition: 200ms ease-in;
+}
+span:hover{
+    color: #C8C0BD;
+	transition: 200ms ease-in;
+}
+
+@media all and (max-width: 800px){
+    .footer-icon{
+        width: 30px;
+    }
+}

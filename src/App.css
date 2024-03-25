@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerOne{
+  font-family: "Duru Sans", sans-serif;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-home{
+  width: 1510px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ICON animation */
+.icon-block-container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+.icon-block{
+  align-content: start;
+  row-gap: 10px;
+}
+.icon-container-one, .icon-container-two, .icon-container-three, .icon-container-four {
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.icon-container-one{
+  
+      background-image: url('Photo/icon-delevery.png');
+      background-repeat: no-repeat;
+      background-position: center;   
+      background-size: 32px;
+}
+.icon-container-two{
+    
+  background-image: url('Photo/icon-quality.png');
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: 32px;
+}
+.icon-container-three{
+  background-image: url('Photo/icon-payment.png');
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: 32px;
+}
+.icon-container-four{
+  background-image: url('Photo/icon-return.png');
+  background-repeat: no-repeat;
+  background-position: center;   
+  background-size: 32px;
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  display: flex;
+
+}
+span{
+  margin-top: 40px;
+  color: #685858;
+}
+.container-about{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ 
+ }
+ .titleAbout{
+  color:#685858;
+  font-family: "Duru Sans", sans-serif;
+  text-align: center;
+ }
+ .parAbout{
+ width: 250px;
+ padding: 20px;
+ font-family: "Duru Sans", sans-serif;
+ text-align: center;
+ }
+ .btnPar{
+   background: none;
+   border: none;
+ }
+ /* SUBSCRIBE */
+ .subscribe-container{
+  height: 300px;
+  background-color: #fcf5f5;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin-top: 20px;
+ }
+ .subscribe-title h2 {
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Duru Sans", sans-serif;
+  color: #685858;
 }
-
-.App-link {
-  color: #61dafb;
+ .input-container{
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+ 
+ }
+ .sub-input {
+  border: none;
+  flex: 8;
+  padding-left: 15px;
 }
+.sub-btn {
+  flex: 1;
+  border: none;
+  background-color:#685858;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Duru Sans", sans-serif;
+}
+ @media all and (max-width: 800px){
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img{
+  width:800px;
+}
+  .image-about{
+    width: 350px;
   }
-  to {
-    transform: rotate(360deg);
+
+ }
+ @media all and (max-width: 500px){
+  img{
+    width: 390px;
+   
   }
+  h2 .titleAbout{
+    font-size: 20px;
+  }
+  .image-about{
+    width: 250px;
+  }
+  .image{
+    width: 390px;
+    height: 70vh;
+  
+  }
+  .titleShop{
+    font-size: 18px;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+
+.contact-pic{
+  position:relative;
+  width: 390px;
+  min-height: 500px;
+}
+.input-container {
+  width: 80%;
+}
+.subscribe-title h2 {
+  font-size: 30px;
+}
+ 
 }

@@ -1,0 +1,104 @@
+ .thank-you{
+    text-align: center;
+    color: #685858;
+}
+.bg-image {
+    background:linear-gradient(rgba(109, 106, 106, 0.6)) ;
+    background-image:url('../Photo/backgroundTwo.jpg') ;
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #685858;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg-image h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  color: #685858;
+}
+label {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+ input, textarea {
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    width: 25%;
+}
+textarea {
+    height: 200px;
+
+}
+.btn-submit {
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background-color:#685858;
+    color: #C8C0BD;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 35px;
+    cursor: pointer;
+    margin: 50px 0;
+}
+.btn-submit:hover{
+    background-color: #662549;
+}
+.contact {
+    text-align: center;
+    color: #685858;
+}
+.contact p {
+    width: 70%;
+    
+}
+.thank-you {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    color: #685858;
+  }
+
+  @media all and (max-width: 800px){
+    .title-contact{
+        font-size: 5px;
+    }
+
+  }
+  @media all and (max-width: 500px) {
+    input, textarea {
+        width: 240px;
+    }
+    textarea {
+        height: 150px;
+        margin-top: 20px;
+        border: 1px solid rgb(109, 109, 109);
+    }
+    .bg-image{
+        width: 390px;
+    }
+    p{
+       font-size: 15px;
+    }
+  
+  }
