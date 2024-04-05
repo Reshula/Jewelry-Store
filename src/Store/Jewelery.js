@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
 import Heart from "react-animated-heart";
 
 
@@ -28,18 +29,19 @@ function Jewelery({jewelery}){
                 
 
             return(
-                    <div   key={id}>  
-                        <div className="shop">
+                  <div   key={id}>  
+                      <div className="shop">
+                      <Link to={`/shop/${item.title}`}>
                            <img className="imageShop" src={image} alt="jewelery" />
                            <Heart isClick={likes[id]} onClick={() => putLike(id)} />
-                         
+                      </Link>
      
                         <div className="info">
                            <p>{jewName}</p>
                            <p>{info}</p>
                            <p>{price}</p> 
                         </div>     
-                        </div>          
+                      </div>          
                   </div>
             )        
     

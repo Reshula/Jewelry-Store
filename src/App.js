@@ -11,6 +11,7 @@ import About from './Components/About';
 import Shop from './Store/Shop';
 import Contact from './Contact/Contact';
 import Subscribe from "./Components/Subscribe";
+import AboutProduct from "./Store/AboutProduct";
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <Route path='/shop' element={<Shop/>}/> 
     <Route path='/about' element={<About/>}/>
     <Route path='/contact' element={<Contact/>}/> 
+    <Route path='/shop/:title' element={<AboutProduct/>} />
     
   </Routes>
   <Subscribe/>
