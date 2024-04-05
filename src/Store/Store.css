@@ -49,6 +49,20 @@
     text-align: center;
     font-family: "Duru Sans", sans-serif;
   }
+  .dinamic-container{
+    margin: 20px;
+    max-width: 350px;
+    font-family: "Duru Sans", sans-serif;
+  }
+  .btn-go-back{
+    background-color: #685858;
+    color: #C8C0BD;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "Duru Sans", sans-serif;
+
+  }
   @media all and (max-width: 800px){
     .imageShop:hover{
         transform: scale(1.2);  

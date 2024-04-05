@@ -5,15 +5,18 @@ const AboutProduct = () =>{
     const { title } = useParams()
 
     return(
-        <div>
+        <div className="dinamic-container">
             {data.filter((item) => item.title === title).map((elem, index) =>{
                 return(
                     <div key={index}>
-                        <p>{elem.name}</p>
+                      
                         <img 
-                        src={`../${elem.img}.jpg`}
-                        alt='jewelry'/>
-                        <button onClick={() => navigate(-1)}> GO BACK</button>
+                        src={`../${elem.image}.jpg`}
+                        alt='jewelry' width='250px'/>
+                        <p>{elem.jewName}</p>
+                        <p>{elem.info}</p>
+                        <p>{elem.price}</p>
+                        <button className="btn-go-back" onClick={() => navigate(-1)}> GO BACK</button>
                     </div>
                 );
             })}
