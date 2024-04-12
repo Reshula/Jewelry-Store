@@ -25,7 +25,7 @@ function Jewelery({jewelery}){
 
         <div className="containerJewelery">
             {jewelery.map ((item) =>{
-                const {id, jewName, info, price, image}= item;
+                const {id,  info,  image}= item;
                 
 
             return(
@@ -37,9 +37,8 @@ function Jewelery({jewelery}){
                       </Link>
      
                         <div className="info">
-                           <p>{jewName}</p>
-                           <p>{info}</p>
-                           <p>{price}</p> 
+                        <p>{info}</p>
+                       
                         </div>     
                       </div>          
                   </div>

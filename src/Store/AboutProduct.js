@@ -5,21 +5,24 @@ const AboutProduct = () =>{
     const { title } = useParams()
 
     return(
-        <div className="dinamic-container">
+        <div className="container-aboutProduct"  >
+            <div >
             {data.filter((item) => item.title === title).map((elem, index) =>{
                 return(
-                    <div key={index}>
+                    <div  key={index}>
                       
-                        <img 
-                        src={`../${elem.image}.jpg`}
+                        <img className="img-about-product"
+                        src={elem.image} 
                         alt='jewelry' width='250px'/>
                         <p>{elem.jewName}</p>
                         <p>{elem.info}</p>
                         <p>{elem.price}</p>
                         <button className="btn-go-back" onClick={() => navigate(-1)}> GO BACK</button>
                     </div>
-                );
+                  
+                ); 
             })}
+            </div> 
         </div>
     );
 }

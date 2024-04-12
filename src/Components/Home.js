@@ -15,7 +15,7 @@ const Home = () =>{
     return(
         <div>
           <div className="containerOne">
-            <img data-aos="zoom-in-up" src={imageTitle} alt="raring" width='1510px'/> 
+            <img className="image-home" data-aos="zoom-in-up" src={imageTitle} alt="raring" /> 
      
           </div>
           <div  className='icon-block-container'>
